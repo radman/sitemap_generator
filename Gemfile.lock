@@ -1,0 +1,18 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    anemone (0.7.2)
+      nokogiri (>= 1.3.0)
+      robotex (>= 1.0.0)
+    builder (3.1.4)
+    nokogiri (1.5.5)
+    robotex (1.0.0)
+    sitemap_generator (3.4)
+      builder
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  anemone
+  sitemap_generator
