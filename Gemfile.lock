@@ -9,6 +9,7 @@ GEM
     robotex (1.0.0)
     sitemap_generator (3.4)
       builder
+    spider (0.4.4)
 
 PLATFORMS
   ruby
@@ -16,3 +17,4 @@ PLATFORMS
 DEPENDENCIES
   anemone
   sitemap_generator
+  spider

@@ -1,29 +1,11 @@
 require 'rubygems'
-require 'anemone'
-require 'sitemap_generator'
 require 'yaml'
+require './crawler2'
 
 config = YAML.load_file(File.join(File.expand_path(File.dirname(__FILE__), 'config.yml')))
 
-pages = []
+crawler = Crawler2.new
 
-Anemone.crawl(config['site']) do |anemone|
-  anemone.on_every_page do |page|
-    if !page.visited
-      pages << page
-      puts page.url
-    end
-  end
-
-  anemone.after_crawl do |pages|
-  end
-end
-
-SitemapGenerator::Sitemap.default_host = config['site']
-SitemapGenerator::Sitemap.create_index = false
-SitemapGenerator::Sitemap.create  do
-  pages.each do |page|
-    add page.url.path unless page.url.path == "/"
-  end
-end
+#crawler.crawl config['site'], :max_pages => 20, :generate_sitemap => "./sitemap.xml.gz"
+crawler.crawl config['site'], :generate_sitemap => "./sitemap.xml.gz", :filter => config['filter'], :crawl_rate => 0.1
 

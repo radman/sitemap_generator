@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>All Students | CoopStudent</title>
+<meta content='Find and hire a student for your next project. Browse by degree, year, and location. View portfolios, resumes and previous work.' name='description' />
+<meta content='IE=8' http-equiv='X-UA-Compatible' />
+<meta content='text/html; charset=us-ascii' http-equiv='content-type' />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="tK5SH1HA1Os5cBe3Kb4Agi/JRqHm4uyWQMckl+zq6uw=" name="csrf-token" />
+<script src="/assets/application-5bbc551361f1d77892fa612ccad6066a.js" type="text/javascript"></script>
+<link href="/assets/application-a58d98d2e968fb37c7e18aa3b9530d60.css" media="screen" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/png" href="http://mvp.coopstudent.com/assets/favicon4.png">
+
+<!--[if lt IE 8]>
+<link href="/assets/sortfolio_ie-97be24665e79bb05b6906feed54e2c3c.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25116789-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</head>
+<body class='home'>
+<div class='container'>
+<div class='header' id='header'>
+<div class='signup guest_user' id='signup'>
+<a href="http://coopstudent.com/signup_with_facebook" class="get_listed_today signup"></a>
+<div class='signup_description' id='slide_listed' style='display:none'>
+<div class='signup_text'>
+<a href="http://coopstudent.com/signup_with_facebook" class="get_listed_today signup">Create a listing.
+<br />
+Add your resume.
+<br />
+Start getting work.
+</a></div>
+</div>
+</div>
+<div class='nav'>
+<a href="http://coopstudent.com/students">All students</a>
+|
+<a href="http://coopstudent.com/jobs">Job listings</a>
+|
+<a href="http://coopstudent.com/about">About us</a>
+|
+<a href="/users/auth/facebook">Sign in with Facebook
+</a></div>
+
+<div class='masthead'>
+<div class='logo'>
+<a href="http://coopstudent.com/" class="homepage pull-left"><img alt="CoopStudent.com" src="/assets/logos/logo37-a7a2e2da21629a41757b98e44499b304.png" /></a>
+<div class='label label-important beta pull-left'>
+beta
+</div>
+</div>
+<div class='clearfix'></div>
+<h1>Find the right co-op student for your next project.</h1>
+</div>
+</div>
+
+<div class='content'>
+
+<div class='filterbar hidden'>
+<div class='filter search'>
+<ul class='search_bar'>
+<li>Showing all students</li>
+</ul>
+</div>
+</div>
+<div class='filterbar'>
+<div class='filter search'>
+<ul class='search_bar'>
+<li>Showing students who are interested in  </li>
+<li class='menu'>
+<a href='#' id='search_budget_name' name='search_budget_name'>
+Any field
+</a>
+<div class='search_menu' id='search_budget_menu' style='display:none'>
+<a href="http://coopstudent.com/students" class="search_budget_menu_links homepage">Any field</a>
+<a href="http://coopstudent.com/advertising-students" class="search_budget_menu_links">Advertising</a>
+<a href="http://coopstudent.com/broadcasting-students" class="search_budget_menu_links">Broadcasting</a>
+<a href="http://coopstudent.com/business-students" class="search_budget_menu_links">Business</a>
+<a href="http://coopstudent.com/entertainment-students" class="search_budget_menu_links">Entertainment</a>
+<a href="http://coopstudent.com/finance-students" class="search_budget_menu_links">Finance</a>
+<a href="http://coopstudent.com/health-students" class="search_budget_menu_links">Health</a>
+<a href="http://coopstudent.com/hospitality-students" class="search_budget_menu_links">Hospitality</a>
+<a href="http://coopstudent.com/human-resources-students" class="search_budget_menu_links">Human Resources</a>
+<a href="http://coopstudent.com/journalism-students" class="search_budget_menu_links">Journalism</a>
+<a href="http://coopstudent.com/marketing-students" class="search_budget_menu_links">Marketing</a>
+<a href="http://coopstudent.com/music-students" class="search_budget_menu_links">Music</a>
+<a href="http://coopstudent.com/non-profit-students" class="search_budget_menu_links">Non-Profit</a>
+<a href="http://coopstudent.com/online-students" class="search_budget_menu_links">Online</a>
+<a href="http://coopstudent.com/political-students" class="search_budget_menu_links">Political</a>
+<a href="http://coopstudent.com/social-media-students" class="search_budget_menu_links">Social Media</a>
+<a href="http://coopstudent.com/sports-students" class="search_budget_menu_links">Sports</a>
+<a href="http://coopstudent.com/web-development-students" class="search_budget_menu_links">Web Development</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<script type='text/javascript'>
+  //<![CDATA[
+    $(document).ready(function() {
+      $("#search_location_name").click(function() {
+        $("#search_location_menu").show();
+      });
+      $("#search_budget_name").click(function() {
+        $("#search_budget_menu").show();
+      });
+      $(document).click(function(e){
+        var isMenu = $(e.target).parent(".filterbar li.menu").size() == 1;
+        if (!isMenu)
+          $(".search_menu").hide();
+      });
+    });
+  //]]>
+</script>
+
+<div id='user-pagination'><div class='pagination'>
+<ul>
+
+
+<li class=' active'>
+<a href="/">1</a>
+</li>
+
+<li class=''>
+<a href="/?page=2" rel="next">2</a>
+</li>
+
+<li class=''>
+<a href="/?page=3">3</a>
+</li>
+
+<li class=''>
+<a href="/?page=4">4</a>
+</li>
+
+<li class=''>
+<a href="/?page=5">5</a>
+</li>
+
+<li class='disabled'>
+<a href="#">...</a>
+</li>
+
+<li class='next'>
+<a href="/?page=2" rel="next">Next &rsaquo;</a>
+</li>
+
+<li>
+<a href="/?page=39">Last &raquo;</a>
+</li>
+
+</ul>
+</div>
+</div>
+<div class='users'>
+<div class='user user-card'>
+<div class='card-upgrade listing_content'>
+<div class='cardcap-upgrade'>
+<img alt="" height="10" src="/assets/card-top-large-48223401b205c85350d22b77785928b1.png" width="470" />
+</div>
+<div class='cardcontent-upgrade'>
+<div class='avatar'>
+<a href="/peter-luk"><img alt="Peter Luk" height="70" src="https://coopstudent.s3.amazonaws.com/production/uploads/user/avatar/243/card_HsTZSDw4avx.gif" title="Peter Luk" width="70" /></a>
+</div>
+<div class='cardcompany' style='height:150px'>
+<a href="http://www.sfu.ca/" target="_blank"><img align="right" alt="Simon Fraser University" height="30" src="https://coopstudent.s3.amazonaws.com/production/uploads/university/logo/29/card_Simon_Fraser_University.jpg" title="Simon Fraser University" /></a>
+<h2 style='margin-top:5px'>
+<a href="/peter-luk">Peter Luk</a>
+</h2>
+<p class='degree' style='font-size: 1.2em; color:#999;'>
+Marketing, Social Media
+</p>
+<p>I'm a Fifth Year business student at Beedie School of Business. Currently I' am studying finance, however I have a strong passion towards marketing and creative design. I grew up in a household of artist, learning how to draw at the age of 6 and by 8 I have won ...</p>
+</div>
+<div class='cardtools'>
+<div class='listing printpage'>
+<span class='favorite_links'>
+
+<a href="/students/peter-luk">Contact</a>
+</span>
+</div>
+</div>
+
+<div class='clearfix'></div>
+</div>
+<div class='cardcap-upgrade'>
+<img alt="" src="/assets/card-bottom-large-23319d5ad4a1662dd9859e96ffc9ddd5.png" />
+</div>
+</div>
+</div>
+<div class='user user-card'>
+<div class='card-upgrade listing_content'>
+<div class='cardcap-upgrade'>
+<img alt="" height="10" src="/assets/card-top-large-48223401b205c85350d22b77785928b1.png" width="470" />
+</div>
+<div class='cardcontent-upgrade'>
+<div class='avatar'>
+<a href="/michael-zhang"><img alt="Michael Zhang" height="70" src="https://coopstudent.s3.amazonaws.com/production/uploads/user/avatar/238/card_image.jpg" title="Michael Zhang" width="70" /></a>
+</div>
+<div class='cardcompany' style='height:150px'>
+<a href="http://www.sfu.ca/" target="_blank"><img align="right" alt="Simon Fraser University" height="30" src="https://coopstudent.s3.amazonaws.com/production/uploads/university/logo/29/card_Simon_Fraser_University.jpg" title="Simon Fraser University" /></a>
+<h2 style='margin-top:5px'>
+<a href="/michael-zhang">Michael Zhang</a>
+</h2>
+<p class='degree' style='font-size: 1.2em; color:#999;'>
+Business, Sports
+</p>
+<p>I am third year business student in SFU. I like working with people and seeking full time co-op position.</p>
+</div>
+<div class='cardtools'>
+<div class='listing printpage'>
+<span class='favorite_links'>
+
+<a href="/students/michael-zhang">Contact</a>
+</span>
+</div>
+</div>
+
+<div class='clearfix'></div>
+</div>
+<div class='cardcap-upgrade'>
+<img alt="" src="/assets/card-bottom-large-23319d5ad4a1662dd9859e96ffc9ddd5.png" />
+</div>
+</div>
+</div>
+<div class='user user-card'>
+<div class='card-upgrade listing_content'>
+<div class='cardcap-upgrade'>
+<img alt="" height="10" src="/assets/card-top-large-48223401b205c85350d22b77785928b1.png" width="470" />
+</div>
+<div class='cardcontent-upgrade'>
+<div class='avatar'>
+<a href="/xime-ortega"><img alt="Xime Ortega" height="70" src="https://coopstudent.s3.amazonaws.com/production/uploads/user/avatar/231/card_275641_1183879807_5569288_n.jpg" title="Xime Ortega" width="70" /></a>
+</div>
+<div class='cardcompany' style='height:150px'>
+<a href="http://www.fdu.edu" target="_blank"><img align="right" alt="Fairleigh Dickinson University" height="30" src="https://coopstudent.s3.amazonaws.com/production/uploads/university/logo/3/card_Fairleigh_Dickinson_University.jpeg" title="Fairleigh Dickinson University" /></a>
+<h2 style='margin-top:5px'>
+<a href="/xime-ortega">Xime Ortega</a>
+</h2>
+<p class='degree' style='font-size: 1.2em; color:#999;'>
+Marketing, Advertising
+</p>
+<p>20 year old mexican getting use to the rainy weather of beautiful Vancouver. I'm a student in Fairleigh Dickinson University, an american private University that recently opened a satellite campus in downtown, Vancouver. I'm currently in my second year of my ...</p>
+</div>
+<div class='cardtools'>
+<div class='listing printpage'>
+<span class='favorite_links'>
+
+<a href="/students/xime-ortega">Contact</a>
+</span>
+</div>
+</div>
+
+<div class='clearfix'></div>
+</div>
+<div class='cardcap-upgrade'>
+<img alt="" src="/assets/card-bottom-large-23319d5ad4a1662dd9859e96ffc9ddd5.png" />
+</div>
+</div>
+</div>
+<div class='user user-card'>
+<div class='card-upgrade listing_content'>
+<div class='cardcap-upgrade'>
+<img alt="" height="10" src="/assets/card-top-large-48223401b205c85350d22b77785928b1.png" width="470" />
+</div>
+<div class='cardcontent-upgrade'>
+<div class='avatar'>
+<a href="/shiv-passi"><img alt="Shiv Passi" height="70" src="https://coopstudent.s3.amazonaws.com/production/uploads/user/avatar/230/card_CIMG0888.JPG" title="Shiv Passi" width="70" /></a>
+</div>
+<div class='cardcompany' style='height:150px'>
+<a href="http://www.uwaterloo.ca" target="_blank"><img align="right" alt="University of Waterloo" height="30" src="https://coopstudent.s3.amazonaws.com/production/uploads/university/logo/50/card_university_of_waterloo-300x300.png" title="University of Waterloo" /></a>
+<h2 style='margin-top:5px'>
+<a href="/shiv-passi">Shiv Passi</a>
+</h2>
+<p class='degree' style='font-size: 1.2em; color:#999;'>
+Business, Entertainment
+</p>
+<p>I recently completed my LLB in London England Specializing in Contract law. I also graduated from the University of Waterloo, Majoring in Speech Communications.</p>
+</div>
+<div class='cardtools'>
+<div class='listing printpage'>
+<span class='favorite_links'>
+
+<a href="/students/shiv-passi">Contact</a>
+</span>
+</div>
+</div>
+
+<div class='clearfix'></div>
+</div>
+<div class='cardcap-upgrade'>
+<img alt="" src="/assets/card-bottom-large-23319d5ad4a1662dd9859e96ffc9ddd5.png" />
+</div>
+</div>
+</div>
+<div class='user user-card'>
+<div class='card-upgrade listing_content'>
+<div class='cardcap-upgrade'>
+<img alt="" height="10" src="/assets/card-top-large-48223401b205c85350d22b77785928b1.png" width="470" />
+</div>
+<div class='cardcontent-upgrade'>
+<div class='avatar'>
+<a href="/jonathan-wong--2"><img alt="Jonathan Wong" height="70" src="https://coopstudent.s3.amazonaws.com/production/uploads/user/avatar/227/card_IMG_0185.JPG" title="Jonathan Wong" width="70" /></a>
+</div>
+<div class='cardcompany' style='height:150px'>
+<a href="http://www.sfu.ca/" target="_blank"><img align="right" alt="Simon Fraser University" height="30" src="https://coopstudent.s3.amazonaws.com/production/uploads/university/logo/29/card_Simon_Fraser_University.jpg" title="Simon Fraser University" /></a>
+<h2 style='margin-top:5px'>
+<a href="/jonathan-wong--2">Jonathan Wong</a>
+</h2>
+<p class='degree' style='font-size: 1.2em; color:#999;'>
+Marketing, Social Media
+</p>
+<p>I am a graduate from Simon Fraser University with a Bachelor of Arts in Communications. Through my education, I have gained the skills that are necessary to communicate effectively with others as well as organizational skills needed to complete assignments on time ...</p>
+</div>
+<div class='cardtools'>
+<div class='listing printpage'>
+<span class='favorite_links'>
+
+<a href="/students/jonathan-wong--2">Contact</a>
+</span>
+</div>
+</div>
+
+<div class='clearfix'></div>
+</div>
+<div class='cardcap-upgrade'>
+<img alt="" src="/assets/card-bottom-large-23319d5ad4a1662dd9859e96ffc9ddd5.png" />
+</div>
+</div>
+</div>
+<div class='user user-card'>
+<div class='card-upgrade listing_content'>
+<div class='cardcap-upgrade'>
+<img alt="" height="10" src="/assets/card-top-large-48223401b205c85350d22b77785928b1.png" width="470" />
+</div>
+<div class='cardcontent-upgrade'>
+<div class='avatar'>
+<a href="/timothy-kwan"><img alt="Timothy Kwan" height="70" src="https://coopstudent.s3.amazonaws.com/production/uploads/user/avatar/223/card_41664_539270787_6265_n.jpg" title="Timothy Kwan" width="70" /></a>
+</div>
+<div class='cardcompany' style='height:150px'>
+<a href="http://www.sfu.ca/" target="_blank"><img align="right" alt="Simon Fraser University" height="30" src="https://coopstudent.s3.amazonaws.com/production/uploads/university/logo/29/card_Simon_Fraser_University.jpg" title="Simon Fraser University" /></a>
+<h2 style='margin-top:5px'>
+<a href="/timothy-kwan">Timothy Kwan</a>
+</h2>
+<p class='degree' style='font-size: 1.2em; color:#999;'>
+Advertising, Marketing
+</p>
+<p>I am a graduate from Simon Fraser University with a Bachelor of Arts in Psychology. I am a creative individual who is equipped with excellent research skills and understanding of psychology. I would be delighted to work with your company because of the fascinating ...</p>
+</div>
+<div class='cardtools'>
+<div class='listing printpage'>
+<span class='favorite_links'>
+
+<a href="/students/timothy-kwan">Contact</a>
+</span>
+</div>
+</div>
+
+<div class='clearfix'></div>
+</div>
+<div class='cardcap-upgrade'>
+<img alt="" src="/assets/card-bottom-large-23319d5ad4a1662dd9859e96ffc9ddd5.png" />
+</div>
+</div>
+</div>
+
+<div class='spinner hide' style='text-align: center'>
+<img alt="Spinner" src="/assets/spinner-aa2d5f7e80cec1adf6d005d5f0dfc25d.gif" style="padding: 30px" />
+</div>
+</div>
+<script type='text/javascript'>
+  //<![CDATA[
+    // endless scrolling
+    $(document).ready(function() {
+      var spinner = $(".users .spinner"),
+          currentlyAppending = false,
+          lastPageLoaded = 1,
+          totalPages = 39;
+    
+      $(window).scroll(function() {
+        var url = "http://coopstudent.com/";
+    
+        if (!currentlyAppending && lastPageLoaded < totalPages && url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+    
+          currentlyAppending = true;
+          spinner.show();
+    
+          $.get(url, { js: true, page: lastPageLoaded + 1 }, function(data) {
+            spinner.hide();
+            spinner.before(data);
+            $.refreshCufon();
+            lastPageLoaded = lastPageLoaded + 1;
+            currentlyAppending = false;
+          });
+        }
+      });
+    
+      $("#user-pagination").hide();
+    });
+  //]]>
+</script>
+
+
+<div class='footer'>
+<p>
+Get in touch with us at
+<a href='mailto:contact@coopstudent.com?subject=Questions about CoopStudent'>contact@coopstudent.com</a>.
+</p>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+  var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/nJHgUZ79rAGxrimZEv6bAg.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+</script>
+
+
+</body>
+</html>
